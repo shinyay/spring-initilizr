@@ -1,5 +1,13 @@
 #!/usr/bin/env fish
 
+set -g BOOT_VERSION 2.1.4.RELEASE
+set -g GROUP_ID io.pivotal.shinyay
+set -g ARTIFACT_ID sample
+set -g NAME sample
+set -g DESCRIPTION "Sample project for Spring Boot"
+set -g PACKAGE $GROUP_IS
+set -g DEPENDENCY web,actuator
+
 curl https://start.spring.io/starter.zip --create-dirs -o ./spring/spring.zip \
 	-d type=gradle-project \
 	-d language=kotlin \
