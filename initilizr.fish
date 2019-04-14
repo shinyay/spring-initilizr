@@ -19,4 +19,4 @@ curl https://start.spring.io/starter.zip --create-dirs -o ./spring/spring.zip \
 	-d packageName=io.pivotal.shinyay \
 	-d packaging=jar \
 	-d javaVersion=1.11 \
-	-d dependencies=web,actuator
+	-d dependencies=$DEPENDENCY
