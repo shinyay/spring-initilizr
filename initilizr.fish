@@ -11,12 +11,12 @@ set -g DEPENDENCY web,actuator
 curl https://start.spring.io/starter.zip --create-dirs -o ./spring/spring.zip \
 	-d type=gradle-project \
 	-d language=kotlin \
-	-d bootVersion=2.1.4.RELEASE \
-	-d groupId=io.pivotal.shinyay \
+	-d bootVersion=$BOOT_VERSION \
+	-d groupId=$GROUP_ID \
 	-d artifactId=$ARTIFACT_ID \
 	-d name=$NAME \
-	-d description="Sample project for Spring Boot" \
-	-d packageName=io.pivotal.shinyay \
+	-d description=$DESCRIPTION \
+	-d packageName=$GROUP_ID \
 	-d packaging=jar \
 	-d javaVersion=1.11 \
 	-d dependencies=$DEPENDENCY
